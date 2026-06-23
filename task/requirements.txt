@@ -1,35 +1,25 @@
-black
-flake8
-wemake-python-styleguide
-mypy
-pytest
-responses
-# Http Clients
+# Dev tools
+black==26.1.0
+flake8==7.3.0
+mypy==1.19.1
+wemake-python-styleguide==1.5.0
+
+# HTTP clients
 aiohttp==3.13.3
 requests==2.32.5
 
-# Web Frameworks
-fastapi[standard]
-uvicorn
+# Web framework
+fastapi[standard]==0.134.0
+uvicorn==0.41.0
 
 # Security
 cryptography==46.0.5
-
-# Web Frameworks
-fastapi==0.134.0
-uvicorn==0.41.0
 
 # Database
 sqlalchemy[asyncio]==2.0.41
 aiomysql==0.2.0
 alembic==1.16.0
 python-dotenv==1.1.0
-
-# Linters and Formatters
-black==26.1.0
-flake8==7.3.0
-mypy==1.19.1
-wemake-python-styleguide==1.5.0
 
 # Testing
 pytest==9.0.2

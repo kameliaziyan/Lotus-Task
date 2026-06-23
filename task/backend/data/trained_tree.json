@@ -1,0 +1,166 @@
+{
+  "is_leaf": false,
+  "node_id": "node_15",
+  "total_rows": 96,
+  "class_distribution": {
+    "Healthy": 24,
+    "Risk of burnout": 24,
+    "Vacation required": 24,
+    "Critical condition": 24
+  },
+  "feature": "stress",
+  "condition": "stress <= 6.25",
+  "threshold": 6.25,
+  "split_value": null,
+  "left": {
+    "is_leaf": false,
+    "node_id": "node_5",
+    "total_rows": 41,
+    "class_distribution": {
+      "Healthy": 24,
+      "Risk of burnout": 17
+    },
+    "feature": "meetings",
+    "condition": "meetings <= 4.5",
+    "threshold": 4.5,
+    "split_value": null,
+    "left": {
+      "is_leaf": true,
+      "node_id": "node_1",
+      "total_rows": 21,
+      "class_distribution": {
+        "Healthy": 21
+      },
+      "predicted_class": "Healthy"
+    },
+    "right": {
+      "is_leaf": false,
+      "node_id": "node_4",
+      "total_rows": 20,
+      "class_distribution": {
+        "Healthy": 3,
+        "Risk of burnout": 17
+      },
+      "feature": "stress",
+      "condition": "stress <= 3.75",
+      "threshold": 3.75,
+      "split_value": null,
+      "left": {
+        "is_leaf": true,
+        "node_id": "node_2",
+        "total_rows": 3,
+        "class_distribution": {
+          "Healthy": 3
+        },
+        "predicted_class": "Healthy"
+      },
+      "right": {
+        "is_leaf": true,
+        "node_id": "node_3",
+        "total_rows": 17,
+        "class_distribution": {
+          "Risk of burnout": 17
+        },
+        "predicted_class": "Risk of burnout"
+      }
+    }
+  },
+  "right": {
+    "is_leaf": false,
+    "node_id": "node_14",
+    "total_rows": 55,
+    "class_distribution": {
+      "Risk of burnout": 7,
+      "Vacation required": 24,
+      "Critical condition": 24
+    },
+    "feature": "stress",
+    "condition": "stress <= 8.25",
+    "threshold": 8.25,
+    "split_value": null,
+    "left": {
+      "is_leaf": false,
+      "node_id": "node_8",
+      "total_rows": 26,
+      "class_distribution": {
+        "Risk of burnout": 7,
+        "Vacation required": 19
+      },
+      "feature": "meetings",
+      "condition": "meetings <= 6.5",
+      "threshold": 6.5,
+      "split_value": null,
+      "left": {
+        "is_leaf": true,
+        "node_id": "node_6",
+        "total_rows": 7,
+        "class_distribution": {
+          "Risk of burnout": 7
+        },
+        "predicted_class": "Risk of burnout"
+      },
+      "right": {
+        "is_leaf": true,
+        "node_id": "node_7",
+        "total_rows": 19,
+        "class_distribution": {
+          "Vacation required": 19
+        },
+        "predicted_class": "Vacation required"
+      }
+    },
+    "right": {
+      "is_leaf": false,
+      "node_id": "node_13",
+      "total_rows": 29,
+      "class_distribution": {
+        "Vacation required": 5,
+        "Critical condition": 24
+      },
+      "feature": "sleep",
+      "condition": "sleep <= 4.25",
+      "threshold": 4.25,
+      "split_value": null,
+      "left": {
+        "is_leaf": true,
+        "node_id": "node_9",
+        "total_rows": 22,
+        "class_distribution": {
+          "Critical condition": 22
+        },
+        "predicted_class": "Critical condition"
+      },
+      "right": {
+        "is_leaf": false,
+        "node_id": "node_12",
+        "total_rows": 7,
+        "class_distribution": {
+          "Vacation required": 5,
+          "Critical condition": 2
+        },
+        "feature": "meetings",
+        "condition": "meetings <= 10",
+        "threshold": 10.0,
+        "split_value": null,
+        "left": {
+          "is_leaf": true,
+          "node_id": "node_10",
+          "total_rows": 5,
+          "class_distribution": {
+            "Vacation required": 5
+          },
+          "predicted_class": "Vacation required"
+        },
+        "right": {
+          "is_leaf": true,
+          "node_id": "node_11",
+          "total_rows": 2,
+          "class_distribution": {
+            "Critical condition": 2
+          },
+          "predicted_class": "Critical condition"
+        }
+      }
+    }
+  }
+}
