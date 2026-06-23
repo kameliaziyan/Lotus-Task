@@ -27,6 +27,11 @@ I used some of what i learned in the bootcamp, like the configuration and toolin
 **.gitignore**<br>
 
 
+## The Machine Learning Model
+
+For this project, I chose to use a **Decision Tree** algorithm to predict the burnout risk. This model is very simple to understand and explains its choices clearly, almost like a human making decisions. It also trains extremely fast every time the server starts up, which keeps the app lightweight. Finally, it works great with our data because it easily handles different types of numbers—like sleep hours or stress scales—without needing extra cleanup or complex transformations.
+
+
 # Architecture 
 
 I used a this layered structure because each layer is responsible for a single concern and only interacts with the layer directly below it.
@@ -68,9 +73,13 @@ Two terminals are requires
 **Backend**
 
 cd task
+
 source ./venv/bin/activate
+
 pip install -r requirements.txt
+
 python3 -m backend.app
+
 
 The API will run at:
 
