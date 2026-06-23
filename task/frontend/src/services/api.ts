@@ -4,7 +4,7 @@ import type {
   TreeNode,
 } from "../types";
 
-const BASE_URL = (import.meta.env.VITE_API_URL as string | undefined) ?? "http://localhost:5001";
+const BASE_URL = (import.meta.env.VITE_API_URL as string | undefined) ?? "https://lotus-backend-zc9l.onrender.com";
 
 async function handleResponse<T>(res: Response): Promise<T> {
   if (!res.ok) {
